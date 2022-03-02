@@ -44,7 +44,7 @@ textarea {
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
-  font-size: 36px; 
+  font-size: 24px; 
   display: inline-block;
   line-height: 1;
   text-transform: none;
@@ -65,14 +65,41 @@ textarea {
   font-feature-settings: 'liga';
 }
 
-/* font-family: 'Montserrat', sans-serif; */
-
-body {
-  font-family: 'Overpass', sans-serif;
-}
-
-
 :root {
   --white: #f8f7f3;
   --blue: #1a24fb;
+}
+
+
+body {
+  font-family: 'Overpass', sans-serif;
+  background-color: var(--white);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+header p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  font-weight: 400;
+}
+
+header .material-icons {
+  font-size: 24px;
 }
