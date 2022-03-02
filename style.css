@@ -103,3 +103,81 @@ header p {
 header .material-icons {
   font-size: 24px;
 }
+
+main {
+  max-width: 1280px;
+  margin: 60px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  position: relative;
+  width: 380px;
+  margin: 50px 10px;
+  
+  background-color: var(--white);
+  color: var(--blue);
+}
+
+article {
+  width: 370px;
+  height: 400px;
+  padding: 40px;
+  border: 1px solid var(--blue);
+}
+
+.index {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.sub {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+h2.title {
+  min-height: 90px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.text {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+button {
+  width: 100%;
+  height: 18px;
+  margin-top: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.button-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+}
+
+button .material-icons {
+  font-size: 18px;
+}
