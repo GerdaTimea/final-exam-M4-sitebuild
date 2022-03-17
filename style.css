@@ -11,8 +11,8 @@
   box-sizing: border-box;
 }
 
-ol, 
-ul, 
+ol,
+ul,
 li {
   list-style: none;
   display: block;
@@ -29,7 +29,7 @@ a img {
 
 button,
 a {
-  cursor: pointer; 
+  cursor: pointer;
   color: inherit;
 }
 
@@ -44,7 +44,7 @@ textarea {
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
-  font-size: 24px; 
+  font-size: 24px;
   display: inline-block;
   line-height: 1;
   text-transform: none;
@@ -57,23 +57,21 @@ textarea {
   -webkit-font-smoothing: antialiased;
   /* Support for Safari and Chrome. */
   text-rendering: optimizeLegibility;
-
   /* Support for Firefox. */
   -moz-osx-font-smoothing: grayscale;
-
   /* Support for IE. */
   font-feature-settings: 'liga';
 }
 
 :root {
-  --white: #f8f7f3;
-  --blue: #1a24fb;
+  --primary: #f8f7f3;
+  --secondary: #1a24fb;
 }
 
 
 body {
-  font-family: 'Overpass', sans-serif;
-  background-color: var(--white);
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--primary);
 }
 
 header {
@@ -84,65 +82,65 @@ header {
 
   width: 100%;
   height: 40px;
+  padding: 10px;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px;
 
-  background-color: var(--blue);
-  color: var(--white);
+  background-color: var(--secondary);
+  color: var(--primary);
 }
 
-header p {
-  font-family: 'Montserrat', sans-serif;
+header h1 {
   font-size: 12px;
   letter-spacing: 0.2em;
   font-weight: 400;
-}
-
-header .material-icons {
-  font-size: 24px;
+  text-transform: uppercase;
 }
 
 main {
   max-width: 1280px;
-  margin: 60px auto;
+  margin: 120px auto;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  column-gap: 20px;
+  row-gap: 70px; 
 }
 
 section {
   position: relative;
-  width: 380px;
-  margin: 50px 10px;
-  
-  background-color: var(--white);
-  color: var(--blue);
+  width: 360px;
+
+  background-color: var(--primary);
+  color: var(--secondary);
 }
 
 article {
-  width: 370px;
-  height: 400px;
+  /* height: 420px; */
   padding: 40px;
-  border: 1px solid var(--blue);
+  border: 1px solid var(--secondary);
 }
 
-.index {
+p.index {
   position: absolute;
   top: 0;
   right: 0;
+
   width: 40px;
   height: 40px;
 
-  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   font-size: 24px;
   font-weight: 700;
 }
 
-.sub {
-  font-family: 'Montserrat', sans-serif;
+p.sub {
   font-size: 12px;
   letter-spacing: 0.2em;
   font-weight: 400;
@@ -153,12 +151,12 @@ h2.title {
   min-height: 90px;
   margin-top: 10px;
   margin-bottom: 20px;
-  font-family: 'Montserrat', sans-serif;
   font-size: 36px;
   font-weight: 700;
 }
 
-.text {
+p.text {
+  font-family: 'Overpass', sans-serif;
   font-size: 16px;
   font-weight: 400;
 }
@@ -166,18 +164,22 @@ h2.title {
 button {
   width: 100%;
   height: 18px;
-  margin-top: 10px;
+  margin-top: 12px;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.button-text {
-  font-family: 'Montserrat', sans-serif;
+span.button-text {
   font-size: 14px;
 }
 
 button .material-icons {
   font-size: 18px;
+}
+
+button:hover {
+  background-color: var(--secondary);
+  color: var(--primary);
 }
